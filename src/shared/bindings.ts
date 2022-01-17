@@ -58,12 +58,12 @@ export class BindingUtils {
     return bindingUserSettingsMetaData;
   }
 
-  public static getHttpOutBinding() {
+  public static getHttpOutBinding(outName = 'res', outType = 'http') {
     const binding = {};
 
-    binding[constants.type] = "http";
+    binding[constants.type] = outType;
     binding[constants.direction] = constants.outDirection;
-    binding[constants.name] = "res";
+    binding[constants.name] = outName;
 
     return binding;
   }

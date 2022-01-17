@@ -102,7 +102,7 @@ export class Utils {
     }
 
     if (bindingType === constants.httpTrigger) {
-      bindings.push(BindingUtils.getHttpOutBinding());
+      bindings.push(BindingUtils.getHttpOutBinding(functionObject?.out?.name || undefined));
     }
 
     functionJson.bindings = bindings;
