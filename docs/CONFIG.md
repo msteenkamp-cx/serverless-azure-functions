@@ -18,6 +18,7 @@ This document serves as a basic outline for configuring your Azure Function App 
     - `python3.8` (forced to use `linux`)
     - `dotnet2.2`
     - `dotnet3.1`
+    - `net6.0`
 - `provider.region` - [Azure region](https://azure.microsoft.com/en-us/global-infrastructure/regions/) for resources
 - `provider.prefix` - Prefix used in naming convention for resources. Default `sls`
 - `provider.subscriptionId` - Subscription ID to be used in deployment. Can also be set via:

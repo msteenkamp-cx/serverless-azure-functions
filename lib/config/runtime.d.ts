@@ -6,7 +6,8 @@ export declare enum Runtime {
     PYTHON37 = "python3.7",
     PYTHON38 = "python3.8",
     DOTNET22 = "dotnet2.2",
-    DOTNET31 = "dotnet3.1"
+    DOTNET31 = "dotnet3.1",
+    NET60 = "net6.0"
 }
 export declare const supportedRuntimes: Runtime[];
 export declare const supportedRuntimeSet: Set<Runtime>;
@@ -39,4 +40,5 @@ export declare const dockerImages: {
     "python3.7": string;
     "python3.8": string;
     "dotnet3.1": string;
+    "net6.0": string;
 };
