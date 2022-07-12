@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        runtime: [ dotnet22, dotnet31 ]
+        runtime: [ dotnet22, dotnet31, net60 ]
         os: [ linux, windows ]
       fail-fast: false
     steps:
@@ -45,6 +45,11 @@ jobs:
       uses: actions/setup-dotnet@v1
       with:
         dotnet-version: '3.1.103'
+    - name: setup dotnet 6.0
+      if: matrix.runtime == 'dotnet60'
+      uses: actions/setup-dotnet@v2
+      with:
+        dotnet-version: '6.0.x'
     
     # Run the integration test
     - name: package, deploy, invoke, remove

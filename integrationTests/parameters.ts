@@ -36,15 +36,15 @@ export const defaultParameters: ConfigurationParameters = {
     runtime: "dotnet",
     region: "weur",
   },
-  "net60-linux": {
+  "dotnet60-linux": {
     serviceName: "dt60-lin",
-    configName: "net60-linux",
+    configName: "dotnet60-linux",
     runtime: "dotnet",
     region: "weur",
   },
-  "net60-windows": {
+  "dotnet60-windows": {
     serviceName: "dt60-win",
-    configName: "net60-windows",
+    configName: "dotnet60-windows",
     runtime: "dotnet",
     region: "weur",
   },

@@ -7,7 +7,7 @@ export declare enum Runtime {
     PYTHON38 = "python3.8",
     DOTNET22 = "dotnet2.2",
     DOTNET31 = "dotnet3.1",
-    NET60 = "net6.0"
+    DOTNET60 = "dotnet6.0"
 }
 export declare const supportedRuntimes: Runtime[];
 export declare const supportedRuntimeSet: Set<Runtime>;

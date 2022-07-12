@@ -2,7 +2,7 @@ service: dt60-win
 
 provider:
   name: azure
-  runtime: net6.0
+  runtime: dotnet6.0
   region: West Europe
   prefix: int
   stage: qa
