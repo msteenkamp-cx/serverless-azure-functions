@@ -99,5 +99,5 @@ export const dockerImages = {
   "python3.7": "PYTHON|3.7",
   "python3.8": "PYTHON|3.8",
   "dotnet3.1": "DOTNET|3.1",
-  "net6.0": "DOTNET|6.0",
+  "dotnet6.0": "DOTNET|6.0",
 }
